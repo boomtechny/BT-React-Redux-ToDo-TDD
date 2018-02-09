@@ -1,7 +1,10 @@
 import React from 'react';
-
+import AddTodo from './components/addTodo/';
 const App = () => (
-  <div>BoomTech ToDo</div>
+  <div>
+  <h1>BoomTech ToDo</h1>
+  <AddTodo submitTodo={() => {}} />
+  </div>
 );
 
 
