@@ -8,7 +8,7 @@ const nextId = () => {
 };
 
 const actions = {
-  
+
   submitTodo(text) {
     return {
       type: types.SUBMIT_TODO,
@@ -23,6 +23,14 @@ const actions = {
       id,
     };
   },
+
+  undeleteTodo(){
+    return{
+      type: types.UNDELETE_TODO,
+    }
+  }
 };
+
+
 
 export default actions;
