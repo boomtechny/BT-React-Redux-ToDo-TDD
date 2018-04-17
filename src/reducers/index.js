@@ -3,7 +3,7 @@ import types from '../constants/';
 
 export const initialState = {
   todos: [],
-  deleted:{},
+  deleted: {},
 };
 
 export const reducer = (state = initialState, action) => {

@@ -7,7 +7,7 @@ import actions from './actions/';
 
 export const App = ({ submitTodo, todos, deleteTodo, undeleteTodo }) => (
   <div>
-    <h1>BoomTech Todo List</h1>
+    <h1>Comics To Read</h1>
     <AddTodo submitTodo={submitTodo} undeleteTodo={undeleteTodo} />
     <TodoList todos={todos} deleteTodo={deleteTodo}/>
   </div>
@@ -26,6 +26,8 @@ App.propTypes = {
 };
 
 const mapStateToProps = state => state.todoListApp;
+
+
 
 const mapDispatchToProps = dispatch => ({
   submitTodo: (text) => {
